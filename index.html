@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cryptocash is Professional Creative Template" />
+  <!-- SITE TITLE -->
+  <title>FIFA</title>
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+  <!-- Animation CSS -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <!-- Latest Bootstrap min CSS -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- ionicons CSS -->
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  <!--- owl carousel CSS-->
+  <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/spop.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- Color CSS -->
+  <link id="layoutstyle" rel="stylesheet" href="assets/color/theme.css">
+
+  <link id="layoutstyle" rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body class="v_blue" data-spy="scroll" data-offset="110">
+<script>
+  function onJoinGame() {
+    const uri = window.location.href.split('?')[1]
+    const params = new URLSearchParams(uri)
+    const code = params.get('code')
+    window.open(`https://app.fifa.vin/#/?code=${code}`, '_blank')
+  }
+</script>
+  <!-- START LOADER -->
+  <!-- <div id="loader-wrapper">
+    <div id="loading-center-absolute">
+      <div class="object" id="object_four"></div>
+      <div class="object" id="object_three"></div>
+      <div class="object" id="object_two"></div>
+      <div class="object" id="object_one"></div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+  </div> -->
+  <!-- END LOADER -->
+
+  <!-- START HEADER -->
+  <header class="header_wrap fixed-top">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand page-scroll animation" href="#home_section" data-animation="fadeInDown"
+          data-animation-delay="1s">
+          <img class="logo_light" src="assets/images/logo.png" alt="logo" />
+          <img class="logo_dark" src="assets/images/logo.png" alt="logo" />
+        </a>
+<!--        <div class="nodisplay">-->
+<!--          <div class="thePurse" id="isEthereum">Connect Wallet</div>-->
+<!--          <div class="account">-->
+<!--            <div>-->
+<!--              &lt;!&ndash; <img src="images/wallet.png" > &ndash;&gt;-->
+<!--              <span></span>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--        </div>-->
+        <button class="navbar-toggler animation" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation" data-animation="fadeInDown" data-animation-delay="1.1s">
+          <span class="ion-android-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: center;">
+          <ul class="navbar-nav m-auto align-items-center">
+            <li class="animation " data-animation="fadeInDown" data-animation-delay="1.2s"><a
+                class="nav-link page-scroll nav_item active" href="#home_section">Home</a></li>
+            <li class="animation" data-animation="fadeInDown" data-animation-delay="1.2s"><a
+                class="nav-link page-scroll nav_item" href="#">nft</a></li>
+            <li class="animation" data-animation="fadeInDown" data-animation-delay="1.3s"><a
+                class="nav-link page-scroll nav_item" href="#">competencia</a></li>
+            <li class="animation" data-animation="fadeInDown" data-animation-delay="1.4s"><a
+                class="nav-link page-scroll nav_item" href="#">dao</a></li>
+            <li class="animation" data-animation="fadeInDown" data-animation-delay="1.5s"><a
+                class="nav-link page-scroll nav_item" href="#">mio</a></li>
+            <li class="animation" data-animation="fadeInDown" data-animation-delay="1.5s"><a
+                class="nav-link page-scroll nav_item" href="FIFA whitepaper.pdf">papel blanco</a></li>
+            <li class="titleli">
+              <div class="lng_dropdown" style="position: relative;">
+                <div class="ddTitle borderRadiusTp cursorPointer" style="display: flex;" onclick="changeLanguage()">
+                  <!--  -->
+                  <span class="ddTitleText ">
+                    <img src="assets/images/lan.png">
+                    <!-- <span class="ddlabel ddlabel2">EN</span> -->
+                    <!-- <span class="arrow arrowoff" style="color: #FFFFFF;"></span> -->
+                    <!-- <img id="arrowd" style="height:10px;width:20px; margin-left:10px;display: none;"
+                          src="images/arrow1.png" alt=""> -->
+                    <!-- <img id="arrowu" style="height:10px;width:20px; margin-left:10px;" src="images/down-arrow.png"
+                          alt=""> -->
+                  </span>
+                  <!-- en -->
+
+                </div>
+
+                <div id="selectNationality" class="ddChild ddchild_ border shadow"
+                  style="display: none; z-index: 9999; position: absolute; top: 29px;">
+                  <ul id="listFlag">
+                    <li class="enabled _msddli_ selected">
+                      <img src="assets/images/EN.png">
+                      <span class="ddlabel">EN</span>
+                    </li>
+                    <li class="enabled _msddli_ selected">
+                      <img src="assets/images/CN.png">
+                      <span class="ddlabel">CN</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="animation" data-animation="fadeInDown" data-animation-delay="1.6s"><a
+                class="nav-link page-scroll nav_item" href="#team">Team</a></li> -->
+            <!-- <li class="animation" data-animation="fadeInDown" data-animation-delay="1.7s"><a
+                class="nav-link page-scroll nav_item" href="#faq">FAQ</a></li> -->
+            <!-- <li class="animation" data-animation="fadeInDown" data-animation-delay="1.8s"><a
+                class="nav-link page-scroll nav_item" href="#contact">Contact</a></li> -->
+<!--            <li class="isdisplay">-->
+<!--              <div class="thePurse" id="isEthereum">Connect Wallet</div>-->
+<!--              <div class="account">-->
+<!--                <div style="position: relative;">-->
+<!--                  <div>-->
+<!--                    &lt;!&ndash; <img src="images/wallet.png" > &ndash;&gt;-->
+<!--                    <span></span>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </li>-->
+          </ul>
+          <!-- <ul class="navbar-nav nav_btn align-items-center">
+            <li class="animation" data-animation="fadeInDown" data-animation-delay="1.9s">
+              <div class="lng_dropdown">
+                <select name="countries" id="lng_select">
+                  <option value='en' data-image="assets/images/EN.png" data-title="English">EN</option>
+                  <option value='fn' data-image="assets/images/CN.png" data-title="Chinese">CN</option>
+                </select>
+              </div>
+            </li>
+          </ul> -->
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <!-- END HEADER -->
+
+  <!-- START SECTION BANNER -->
+  <section id="home_section" class="section_banner section_gradiant small_pb bbg" data-z-index="1"
+    data-parallax="scroll">
+    <div class="banner_effect" style="width: 100%; height:100%; position: absolute; top: 0px;">
+      <video id="car_audio" style="object-fit:cover;" autoplay="autoplay" muted="muted" loop="loop"
+        webkit-playsinline="true" x-webkit-airplay="true" playsinline="true" x5-video-player-type="h5"
+        x5-video-player-fullscreen="true" width="100%" height="100%" preload="auto">
+        <source src="assets/images/bg.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-12 col-lg-12 col-sm-12 ">
+          <div class="banner_text text-center" style="margin-bottom: 80px">
+            <img src="assets/images/head1.png" alt="">
+            <!-- <h1 class="animation" data-animation="fadeInUp" data-animation-delay="1.1s">The Number of Token Sales Keeps
+              Rising</h1> -->
+            <p class="animation" data-animation="fadeInUp" data-animation-delay="1.3s">Create your own football legend
+            </p>
+            <!-- <div class="btn_group animation" data-animation="fadeInUp" data-animation-delay="1.4s">
+              <a href="#whitepaper" class="btn btn-default page-scroll btn-radius nav-link">Whitepaper <i
+                  class="ion-ios-arrow-thin-right"></i></a>
+              <a href="#" class="btn btn-default btn-radius">Buy Token Now! <i class="ion-ios-arrow-thin-right"></i></a>
+            </div> -->
+
+          </div>
+        </div>
+
+      </div>
+      <div class="divider large_divider"></div>
+      <div class="divider large_divider"></div>
+    </div>
+  </section>
+  <!-- END SECTION BANNER -->
+
+  <!-- START SECTION ABOUT US -->
+  <section id="about" class="small_pt small_pb bbg">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
+          <div class="aboutimg" style="position: relative">
+            <div class="btnt col-6  col-md-4 m-auto" onclick="onJoinGame()"
+                 style="position: absolute; top: 60px; left: 50%; transform: translateX(-50%)">
+              <img src="assets/images/btn.png" alt="">
+              join game
+            </div>
+            <img src="assets/images/about.png" alt="" class="">
+          </div>
+          <div class="title_default_light text-center">
+            <p class="animation font-w-600" data-animation="fadeInUp" data-animation-delay="0.2s">FIFA was founded in
+              the UK in
+              2016 and is a professional online football quiz entertainment website
+            </p>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12 m-auto">
+          <div class="title_default_light text-center">
+            <p class="uppercase font-20 no-bottom animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+              develop</p>
+            <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+              FIFA is rooted in the background of the rapid development of the Internet, actively innovating in-depth
+              analysis of user community behavior and traditional e-commerce transaction models, and has won the love
+              and support of a wider range of players.
+              FIFA's creative team is composed of professionals with passion and creativity in various fields. The team
+              members have long-term experience in Internet product development and operation. It is our duty to provide
+              consumers with a platform for objective evaluation and rational choice.
+            </p>
+            <p class="uppercase font-20 no-bottom animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+              feature</p>
+            <p class="animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+              FIFA has the cutest picture and has a good visual sense. Players will not spend too much time and energy
+              in such quiz games, nor will players feel boring in such games, as long as the simple mouse and Keyboard,
+              relax and reduce stress. It's life after work, a way of leisure. Moreover, the size of the quiz games is
+              relatively small, which will not bring a lot of burden to the computer, and the requirements for computer
+              configuration are relatively common. The games inside are simple to operate, have a wide variety of types,
+              and do not need to be installed. The characteristics of small file size are favored by the majority of
+              netizens.
+            </p>
+            <p class="uppercase font-20 no-bottom animation" data-animation="fadeInUp" data-animation-delay="0.8s">
+              Target</p>
+            <p class="animation" data-animation="fadeInUp" data-animation-delay="0.8s">
+              FIFA will continue to improve the service level of the platform, provide gamers with the highest quality
+              online entertainment information and the most thoughtful services, enhance the construction of website
+              content, further maintain and improve our platform, enrich the variety of website products, expand the
+              publicity network, and expand market share , make us more competitive in the market and jointly promote
+              the healthy and vigorous development of the blockchain game industry, a new website user experience method
+              and our rich professional and innovative user service experience.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="divider large_divider"></div>
+
+
+      <div class="row">
+        <div class=" offset-md-4 col-md-4 col-sm-2">
+          <div class="title_default_light  text-center">
+            <!-- <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Token Sale</h4> -->
+            <div class="pics">
+              <img src="assets/images/title.png" alt="" class="pic1">
+              <img src="assets/images/titler.png" alt="" class="pic2">
+              <h4>Football quiz</h4>
+            </div>
+
+            <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+              Participate in the quiz to win Qatar World Cup tickets
+              Limited edition football player souvenirs
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-sm-12 m-auto text-center">
+          <div class="tk_countdown_time animation" data-animation="fadeInUp" data-animation-delay="1.2s"
+            data-time="2022/05/08 00:00:00"></div>
+        </div>
+      </div>
+      <!-- <div class="row m-top-40">
+        <div class="btnt offset-3 col-6  col-md-3 m-auto">
+          <img src="assets/images/btn.png" alt="">
+          Quiz
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+  <!-- END SECTION ABOUT US -->
+  <section class="small_pt small_pb bbg">
+    <div class="container">
+      <div class="row">
+        <div class=" offset-md-4 col-md-4 col-sm-2">
+          <div class="title_default_light  text-center">
+            <!-- <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Token Sale</h4> -->
+            <div class="pics">
+              <img src="assets/images/title.png" alt="" class="pic1">
+              <img src="assets/images/titler.png" alt="" class="pic2">
+              <h4>Quiz</h4>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <video id="car_audio2" style="object-fit:cover;" autoplay="autoplay" muted="muted" loop="loop"
+      webkit-playsinline="true" x-webkit-airplay="true" playsinline="true" x5-video-player-type="h5"
+      x5-video-player-fullscreen="true" width="100%" height="100%" preload="auto">
+      <source src="assets/images/shoot.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+
+  <section class="small_pt small_pb bbg" id="how_it_work">
+    <div class="benefits p-tb c-l">
+      <div class="container">
+        <div class="row">
+          <div class=" offset-md-4 col-md-4 col-sm-2">
+            <div class="title_default_light  text-center">
+              <!-- <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Token Sale</h4> -->
+              <div class="pics">
+                <img src="assets/images/title.png" alt="" class="pic1">
+                <img src="assets/images/titler.png" alt="" class="pic2">
+                <h4>HOW FIFA WORK</h4>
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="benefits-box row align-items-center">
+          <div class="col-md-6 nodisplay text-center ">
+            <img src="assets/images/work1.png" alt="">
+          </div>
+          <div class="col-md-4" style="display: flex; flex-wrap: wrap;">
+            <div class="worksleft" style="padding-top: 20px;">
+              <h5 style="color: #AA1B39;">Content and Community Open Platform</h5>
+              <p style="color: #FFFFFF;">The open all-sport content and community platform will include an all-sports
+                public blockchain, allowing third parties to build their decentralized applications, using FIFA as a
+                medium of exchange and incentivizing ecosystem community building momentum.
+                <br>&nbsp;
+              </p>
+            </div>
+            <div class="worksleft" style="padding-top: 20px;">
+              <h5 style="color: #AA1B39;">Predictive Entertainment Platform</h5>
+              <p style="color: #FFFFFF;">The Quanyun Prediction and Entertainment Platform is a set of ecological
+                services built on the Quanyun platform, the public chain and FIFA. It provides the world with the
+                underlying and basic technical services for sports forecasting and entertainment.</p>
+            </div>
+          </div>
+          <div class="col-md-4 isdisplay  text-center">
+            <img src="assets/images/work1.png" alt="">
+          </div>
+          <div class="col-md-4" style="display: flex; flex-wrap: wrap;">
+            <div style="text-align: left;padding-top: 20px;">
+              <h5 style="color: #AA1B39;">Sports IP NFTSwap</h5>
+              <p style="color: #FFFFFF;">
+                The sports IP asset trading platform connects sports IP asset owners, supporters, fans, and content
+                providers, realizes the integration of industrial resources, transfers value, and promotes the
+                development and evolution of the sports industry. </p>
+            </div>
+            <div style="text-align: left;padding-top: 20px;">
+              <h5 style="color: #AA1B39;">An open platform for apps and games</h5>
+              <p style="color: #FFFFFF;">Third-party developers will be able to develop applications and games using the
+                SDK and API interfaces provided by FIFA. These applications and games may be promoted to and/or charged
+                to users on the FIFA platform, by paying FIFA to pay for usage.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="small_pt small_pb bbg">
+    <div class="container">
+      <div class="row">
+        <div class=" offset-md-2 col-md-4 col-sm-12 text-center">
+          <div class="nftContainer" style="height: 150px;">
+            <img src="assets/images/card2.png" alt="" class="back animate-rotateNFTBg">
+            <img src="assets/images/card1.png" alt="" class="front animate-rotateNFT">
+          </div>
+          <img src="assets/images/cardf1.png" alt="" style="max-width: 360px;width: 100%;">
+        </div>
+        <div class=" offset-md-1 col-md-4 col-sm-2 m-top-20">
+          <div class="title_default_light  text-center">
+            <!-- <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Token Sale</h4> -->
+            <div class="pics">
+              <img src="assets/images/title.png" alt="" class="pic1">
+              <img src="assets/images/titler.png" alt="" class="pic2">
+              <h4>NFT CARD</h4>
+            </div>
+            <p></p>
+          </div>
+          <div class="row cardp">
+            <div class="btnt col-4">
+              <img src="assets/images/btn.png" alt="">
+              Features
+            </div>
+            <p class="col-12">To participate in the guessing game, you need to hold an nft star card</p>
+            <div class="btnt col-4">
+              <img src="assets/images/btn.png" alt="">
+              club
+            </div>
+            <p class="col-12">Holding 11 nft star cards will be able to form your private club</p>
+            <div class="btnt col-4">
+              <img src="assets/images/btn.png" alt="">
+              addition
+            </div>
+            <p class="col-12">Collecting 11 NFT jersey cards from a country can increase the bonus by 30% during the quiz</p>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- START SECTION TIMELINE -->
+  <section id="roadmap" class="bg_blue_dark bbg" data-z-index="1" data-parallax="scroll">
+    <div class="container">
+      <div class="row text-center">
+        <div class=" offset-md-4 col-md-4 col-sm-2">
+          <div class="title_default_light  text-center">
+            <div class="pics">
+              <img src="assets/images/title.png" alt="" class="pic1">
+              <img src="assets/images/titler.png" alt="" class="pic2">
+              <h4>FIFA METAVERSE</h4>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 pl-0 pr-0 offset-md-2">
+          <div class="roadmap owl-carousel small_space">
+            <div class="item">
+              <div class="roadmap_box rd_complete">
+                <div class="roadmap_inner">
+                  <div class="icon_roadmap">
+                    <!-- <i class="fa fa-bullhorn animation" data-animation="fadeInDown" data-animation-delay="0.2s"></i> -->
+                  </div>
+                  <div class="roadmap_icon"></div>
+                  <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Phase 1</h6>
+                  <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">airdrop tokens + co-casting
+                    the pot</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="roadmap_box rd_complete current">
+                <div class="roadmap_inner">
+                  <div class="icon_roadmap">
+                  </div>
+                  <div class="roadmap_icon"></div>
+                  <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Phase 2</h6>
+                  <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Pre-sale NFT Genesis Blind
+                    Box</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="roadmap_box">
+                <div class="roadmap_inner">
+                  <div class="icon_roadmap">
+                  </div>
+                  <div class="roadmap_icon"></div>
+                  <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Phase 3</h6>
+                  <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">GameFi guessing game</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="roadmap_box">
+                <div class="roadmap_inner">
+                  <div class="icon_roadmap">
+                  </div>
+                  <div class="roadmap_icon"></div>
+                  <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Phase 4</h6>
+                  <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">NFT+swap transaction</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="roadmap_box">
+                <div class="roadmap_inner">
+                  <div class="icon_roadmap">
+                  </div>
+                  <div class="roadmap_icon"></div>
+                  <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Phase 5</h6>
+                  <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">DEFI3.0</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="roadmap_box">
+                <div class="roadmap_inner">
+                  <div class="icon_roadmap">
+                  </div>
+                  <div class="roadmap_icon"></div>
+                  <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Phase 6</h6>
+                  <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">FIFA metaverse
+                    centralized platform</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SECTION TIMELINE -->
+
+  <section class="small_pt small_pb bbg" id="token">
+    <div class="container">
+      <div class="row">
+        <div class=" offset-md-4 col-md-4 col-sm-2">
+          <div class="title_default_light  text-center">
+            <!-- <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Token Sale</h4> -->
+            <div class="pics">
+              <img src="assets/images/title.png" alt="" class="pic1">
+              <img src="assets/images/titler.png" alt="" class="pic2">
+              <h4>FIFA TOKEN</h4>
+            </div>
+            <p></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 offset-md-3">
+          <img src="assets/images/token1.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg_gray2 bbg">
+    <div class="container">
+      <div class="row">
+        <div class=" offset-md-4 col-md-4 col-sm-2">
+          <div class="title_default_light  text-center">
+            <!-- <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Token Sale</h4> -->
+            <div class="pics">
+              <img src="assets/images/title.png" alt="" class="pic1">
+              <img src="assets/images/titler.png" alt="" class="pic2">
+              <h4>download</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row small_space">
+        <div class="col-lg-6 col-sm-6 res_md_mb_30 res_sm_mb_20 text-center">
+          <div class="doc_box animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+            <img src="assets/images/down1.png" alt="whitepaper4" />
+          </div>
+          <div class="dropdown doc_dropdown animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+            <a href="FIFA whitepaper.pdf" class="btn-block " style="text-align: center;">White paper</a>
+          </div>
+        </div>
+<!--        <div class="col-lg-4 col-sm-6 res_md_mb_30 res_sm_mb_20 text-center">-->
+<!--          <div class="doc_box animation" data-animation="fadeInUp" data-animation-delay="0.3s">-->
+<!--            <img src="assets/images/down2.png" alt="onepaper" />-->
+<!--          </div>-->
+<!--          <div class="dropdown doc_dropdown animation" data-animation="fadeInUp" data-animation-delay="0.6s">-->
+<!--            <a href="" class="btn-block " style="text-align: center;">Business Plan</a>-->
+<!--          </div>-->
+<!--        </div>-->
+        <div class="col-lg-6 col-sm-6 res_md_mb_30 res_sm_mb_20 text-center">
+          <div class="doc_box animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+            <img src="assets/images/down3.png" alt="terms-conditions" />
+          </div>
+          <div class="dropdown doc_dropdown animation" data-animation="fadeInUp" data-animation-delay="0.8s">
+            <a href="" class="btn-block " style="text-align: center;">Audit Report </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START CLIENTS SECTION -->
+  <section class="client_logo small_pt bbg">
+    <div class="container">
+      <div class="row">
+        <div class=" offset-md-4 col-md-4 col-sm-2">
+          <div class="title_default_light  text-center">
+            <!-- <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Token Sale</h4> -->
+            <div class="pics">
+              <img src="assets/images/title.png" alt="" class="pic1">
+              <img src="assets/images/titler.png" alt="" class="pic2">
+              <h4>PARTNER</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center text-center overflow_hide small_space">
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.3s">
+            <img src="assets/images/par1.png" alt="client_logo_wt1" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.4s">
+            <img src="assets/images/par2.png" alt="client_logo_wt2" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.5s">
+            <img src="assets/images/par3.png" alt="client_logo_wt3" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.6s">
+            <img src="assets/images/par4.png" alt="client_logo_wt4" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.8s">
+            <img src="assets/images/par8.png" alt="client_logo_wt8" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.8s">
+            <img src="assets/images/par9.png" alt="client_logo_wt8" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.8s">
+            <img src="assets/images/par7.png" alt="client_logo_wt7" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.7s">
+            <img src="assets/images/par5.png" alt="client_logo_wt5" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.8s">
+            <img src="assets/images/par6.png" alt="client_logo_wt6" />
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.8s">
+            <img src="assets/images/par10.png" alt="client_logo_wt8" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.8s">
+            <img src="assets/images/par11.png" alt="client_logo_wt8" />
+          </div>
+        </div>
+        <div class="col-md-4 col-6 logo_border">
+          <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+            data-animation="fadeInUp" data-animation-delay="0.8s">
+            <img src="assets/images/par12.png" alt="client_logo_wt8" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CLIENTS SECTION -->
+
+  <!-- START FOOTER SECTION -->
+  <footer class="">
+    <div class="bottom_footer" style="background: #9A1032;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="copyright">FIFA &copy; 2022 All Rights Reserved</p>
+          </div>
+<!--          <div class="col-md-12 " style="margin-top: 10px;margin-bottom: 40px;">-->
+<!--            <ul class="list_none footer_menu" style="text-align: center;">-->
+<!--              <li><a href="https://twitter.com/FIFAMETA?s=09" target="_blank"><img src="assets/images/twitter.png" alt=""></a></li>-->
+<!--              <li><a href="https://ss.transgot.cn/FIFAMETA" target="_blank"><img src="assets/images/telegram.png" alt=""></a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER SECTION -->
+
+  <a href="#" class="scrollup btn-default"><i class="ion-ios-arrow-up"></i></a>
+
+  <!-- Latest jQuery -->
+  <script src="assets/js/jquery-1.12.4.min.js"></script>
+  <!-- Latest compiled and minified Bootstrap -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- owl-carousel min js  -->
+  <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+  <!-- magnific-popup min js  -->
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <!-- waypoints min js  -->
+  <script src="assets/js/waypoints.min.js"></script>
+  <!-- parallax js  -->
+  <script src="assets/js/parallax.js"></script>
+  <!-- countdown js  -->
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <!-- particles min js  -->
+  <script src="assets/js/particles.min.js"></script>
+  <!-- scripts js -->
+  <script src="assets/js/jquery.dd.min.js"></script>
+  <!-- jquery.counterup.min js -->
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/spop.min.js"></script>
+  <script src="assets/js/notification.js"></script>
+  <!-- scripts js -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/common.js"></script>
+
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('touchstart', function () {
+      document.getElementById('car_audio').play();
+      //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        // alert(2)
+        document.getElementById('car_audio').play();
+        // document.getElementById('video').play();
+      }, false);
+    }, false);
+    setTimeout(function () {
+      //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以
+      // alert(1)
+      document.getElementById('car_audio').load();
+      document.getElementById('car_audio').play();
+
+      //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        // alert(2)
+        document.getElementById('car_audio').play();
+        // document.getElementById('video').play();
+      }, false);
+    }, 1000)
+
+
+    document.addEventListener('touchstart', function () {
+      document.getElementById('car_audio2').play();
+      //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        // alert(2)
+        document.getElementById('car_audio2').play();
+        // document.getElementById('video').play();
+      }, false);
+    }, false);
+    setTimeout(function () {
+      //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以
+      // alert(1)
+      document.getElementById('car_audio2').load();
+      document.getElementById('car_audio2').play();
+
+      //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        // alert(2)
+        document.getElementById('car_audio2').play();
+        // document.getElementById('video').play();
+      }, false);
+    }, 1000)
+  </script>
+</body>
+
+</html>
